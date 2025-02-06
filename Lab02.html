@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab02</title>
+</head>
+<style>
+    body {
+        background-color: #9a9a9a;
+        font-family: Arial, sans-serif;
+    }
+    .form-container {
+        margin: 50px;
+    }
+    label {
+        font-size: 20px;
+    }
+    input[type="text"] {
+        display: block;
+        margin: 10px 0;
+        padding: 10px;
+        width: 20%;
+    }
+    .submit-btn {
+        background-color: #ff0000;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .submit-btn:hover {
+        background-color: #9f0000;
+    }
+</style>
+<body>
+    <h1 style="text-align: center; color: black; font-size: 50px;">Powerlifting Meet Qualifier Form</h1>
+    <form action="Lab02Thanks.html">
+        <div class="form-container">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="squat">Enter your Squat max (Lbs):</label>
+            <input type="text" id="squat" name="squat" required>
+            
+            <label for="bench">Enter your Bench Press max (Lbs):</label>
+            <input type="text" id="bench" name="bench" required>
+            
+            <label for="deadlift">Enter your Deadlift max (Lbs):</label>
+            <input type="text" id="deadlift" name="deadlift" required>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+</body>
